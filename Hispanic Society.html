@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hispanic Society · Culture. Connection. Belonging.</title>
+<meta name="description" content="A community-led Latino cultural platform in London, based at the University of Greenwich. Events, creativity and belonging.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6EEDD;--ink:#222120;--peach:#EFC9AE;--red:#D4492B;--blue:#1F3FA0;--gold:#F0B323;--card:#FBF6EA;--line:rgba(34,33,32,.18);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1C1B1A;--ink:#F6EEDD;--peach:#3A2C25;--card:#262423;--line:rgba(246,238,221,.2);--blue:#6F8CF0}}
+:root[data-theme="dark"]{--bg:#1C1B1A;--ink:#F6EEDD;--peach:#3A2C25;--card:#262423;--line:rgba(246,238,221,.2);--blue:#6F8CF0}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 'DM Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:'Archivo Black','Montserrat',Impact,sans-serif;font-weight:400;line-height:.98;margin:0;text-transform:uppercase;letter-spacing:-.01em}
+h1{font-size:clamp(2.6rem,8.5vw,6.8rem)}h2{font-size:clamp(2rem,5vw,3.8rem)}h3{font-size:1.3rem}
+.k{font:800 .75rem/1 'Montserrat',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+a{color:inherit}
+.w{max-width:1200px;margin:0 auto;padding:0 clamp(1.1rem,4vw,2.5rem)}
+.sec{padding:clamp(3rem,8vw,6.5rem) 0}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 0;flex-wrap:wrap}
+.logo{font:400 1.15rem 'Archivo Black',sans-serif;text-decoration:none;text-transform:uppercase;line-height:1}
+.logo small{display:block;font:700 .6rem 'Montserrat',sans-serif;letter-spacing:.14em;color:var(--blue);margin-top:.25rem}
+.links{display:flex;gap:clamp(.7rem,2vw,1.6rem);flex-wrap:wrap}
+.links a{font:700 .74rem 'Montserrat',sans-serif;letter-spacing:.12em;text-decoration:none;padding:.4rem 0;border-bottom:2px solid transparent}
+.links a:hover,.links a.on{border-color:var(--red)}
+.btn{display:inline-block;font:800 .78rem 'Montserrat',sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;padding:1rem 1.6rem;border:2px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--red)}
+.btn.r{background:var(--red);border-color:var(--red);color:#fff}.btn.o{background:transparent;color:var(--ink)}
+.row{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.view{display:none}.view.on{display:block}
+/* placeholders */
+.ph{position:relative;overflow:hidden;min-height:180px;border-radius:2px}
+.ph::after{content:attr(data-l);position:absolute;left:.7rem;bottom:.6rem;font:700 .6rem 'Montserrat',sans-serif;letter-spacing:.12em;text-transform:uppercase;background:var(--bg);color:var(--ink);padding:.25rem .5rem}
+.p1{background:radial-gradient(circle at 70% 30%,var(--gold) 0 22%,transparent 23%),linear-gradient(135deg,var(--red) 50%,var(--blue) 50%)}
+.p2{background:conic-gradient(from 90deg at 30% 70%,var(--blue) 0 25%,var(--peach) 0 50%,var(--red) 0 75%,var(--gold) 0)}
+.p3{background:repeating-linear-gradient(45deg,var(--gold) 0 18px,var(--peach) 18px 36px)}
+.p4{background:radial-gradient(circle at 20% 80%,var(--red) 0 30%,transparent 31%),radial-gradient(circle at 80% 20%,var(--gold) 0 24%,var(--blue) 25%)}
+.p5{background:linear-gradient(90deg,var(--blue) 33%,var(--gold) 33% 66%,var(--red) 66%)}
+.hero{display:grid;gap:2rem;grid-template-columns:1.25fr 1fr;align-items:center;padding:clamp(2rem,6vw,5rem) 0}
+.hero em{font-style:normal;color:var(--red)}
+.collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:200px 150px 130px;gap:.7rem}
+.collage .ph:nth-child(1){grid-row:span 2}.collage .ph:nth-child(4){grid-column:span 2}
+.band{background:var(--ink);color:var(--bg);overflow:hidden;white-space:nowrap;padding:.9rem 0;font:800 .85rem 'Montserrat',sans-serif;letter-spacing:.3em}
+.band span{display:inline-block;animation:m 28s linear infinite}
+@keyframes m{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.band span{animation:none}html{scroll-behavior:auto}}
+.cols{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.lead{font-size:clamp(1.3rem,2.6vw,1.9rem);font-family:'Montserrat',sans-serif;font-weight:700;line-height:1.3;max-width:24ch}
+.pill{border-top:6px solid var(--red);background:var(--card);padding:1.5rem}.pill:nth-child(2){border-color:var(--blue)}.pill:nth-child(3){border-color:var(--gold)}
+.pill h3{margin-bottom:.6rem}
+.tint{background:var(--peach)}
+.cards{display:grid;gap:1.4rem;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.ev{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column}
+.ev .ph{min-height:150px}.ev div.b{padding:1.2rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.ev .m{font:700 .78rem 'Montserrat',sans-serif;letter-spacing:.06em}.ev p{margin:0;font-size:.95rem}
+.ev a.btn{margin-top:auto;padding:.7rem 1rem;align-self:flex-start}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.6rem 0}
+.chips button{font:700 .72rem 'Montserrat',sans-serif;letter-spacing:.08em;padding:.55rem .9rem;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.chips button[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:#fff}
+.past li{display:flex;justify-content:space-between;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line)}
+.past{list-style:none;padding:0;margin:1rem 0 0}
+.gal{display:grid;gap:.7rem;grid-template-columns:repeat(6,1fr);grid-auto-rows:120px}
+.gal .ph:nth-child(1){grid-column:span 3;grid-row:span 3}.gal .ph:nth-child(2){grid-column:span 3;grid-row:span 2}.gal .ph:nth-child(3){grid-column:span 2;grid-row:span 2}.gal .ph:nth-child(4){grid-column:span 1;grid-row:span 2}.gal .ph:nth-child(5){grid-column:span 3}
+.cta{background:var(--blue);color:#fff}.cta .k{color:var(--gold)}.cta h2{margin:1rem 0}
+:root[data-theme="dark"] .cta,.cta{--blue:#1F3FA0}
+form{display:grid;gap:1rem;max-width:560px}
+label{font:700 .72rem 'Montserrat',sans-serif;letter-spacing:.1em;text-transform:uppercase;display:grid;gap:.4rem}
+input,textarea,select{font:inherit;padding:.85rem;border:2px solid var(--ink);background:var(--card);color:var(--ink);border-radius:0;width:100%}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+footer{background:var(--ink);color:var(--bg);padding:3rem 0 2rem}
+footer .cols{grid-template-columns:2fr 1fr 1fr}footer a{display:block;margin:.3rem 0}
+footer .big{font:400 clamp(1.4rem,3vw,2.2rem) 'Archivo Black',sans-serif;text-transform:uppercase}
+.note{font-size:.8rem;opacity:.7}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px}.gal .ph{grid-column:auto!important;grid-row:auto!important}footer .cols{grid-template-columns:1fr}.links{width:100%;justify-content:space-between}}
+</style>
+</head>
+<body>
+<a href="#main" class="btn" style="position:absolute;left:-999px" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Skip to content</a>
+<header><div class="w"><nav aria-label="Main">
+<a class="logo" href="#home">Hispanic Society<small>UNIVERSITY OF GREENWICH</small></a>
+<div class="links"><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#events">EVENTS</a><a href="#community">COMMUNITY</a><a href="#get-involved">GET INVOLVED</a></div>
+</nav></div></header>
+<main id="main">
+
+<section class="view" id="v-home">
+<div class="w"><div class="hero"><div>
+<p class="k">Culture · Connection · Belonging</p>
+<h1 style="margin:1.2rem 0">More than a society. A <em>culture.</em> A community.</h1>
+<p style="max-width:48ch">Bringing people together through Latino culture, unforgettable experiences and meaningful connections. Based at the University of Greenwich, building a community that extends beyond campus.</p>
+<div class="row"><a class="btn r" href="#get-involved">Join the community</a><a class="btn o" href="#events">Explore our events</a></div></div>
+<div class="collage" aria-hidden="true"><div class="ph p1" data-l="Photo: community"></div><div class="ph p2" data-l="Photo: music"></div><div class="ph p3" data-l="Photo: art"></div><div class="ph p4" data-l="Photo: celebration"></div></div></div></div>
+<div class="band" aria-hidden="true"><span>CULTURE ✦ CONNECTION ✦ BELONGING ✦ CULTURE ✦ CONNECTION ✦ BELONGING ✦ CULTURE ✦ CONNECTION ✦ BELONGING ✦ CULTURE ✦ CONNECTION ✦ BELONGING ✦ </span></div>
+<div class="sec"><div class="w cols"><p class="lead">Culture brings us together. Community makes us belong.</p>
+<div><p class="k">Who we are</p><p>We’re a community-led platform celebrating Latino culture through gatherings, music, art and ideas. Whether your roots are in Latin America, or you simply love the culture, there’s a seat for you. Come for the experiences. Stay for the people.</p><a class="btn o" href="#about">Our story</a></div></div></div>
+<div class="sec tint"><div class="w"><p class="k">Upcoming experiences</p><h2 style="margin:.8rem 0 2rem">What’s next</h2><div class="cards" data-feed="3"></div><div class="row"><a class="btn" href="#events">All events</a></div></div></div>
+<div class="sec"><div class="w"><p class="k">Culture in motion</p><h2 style="margin:.8rem 0 2rem">Moments from the community</h2>
+<div class="gal" aria-hidden="true"><div class="ph p1" data-l="Placeholder"></div><div class="ph p4" data-l="Placeholder"></div><div class="ph p3" data-l="Placeholder"></div><div class="ph p2" data-l="Placeholder"></div><div class="ph p5" data-l="Placeholder"></div></div>
+<p class="note">Editorial placeholders: genuine event photography to be added.</p></div></div>
+<div class="sec cta"><div class="w"><p class="k">Become part of the community</p><h2>Your people are already here.</h2><p style="max-width:50ch">Join through the University of Greenwich Students’ Union and meet the people behind the culture.</p><div class="row"><a class="btn r" href="#get-involved">Join now</a></div></div></div>
+<div class="sec"><div class="w cols"><div><p class="k">Follow our journey</p><h2 style="margin:.8rem 0">On Instagram</h2><p>Behind the scenes, recaps and what’s coming next.</p><div class="row"><a class="btn o" href="https://www.instagram.com/" rel="noopener" target="_blank">Follow us</a></div></div>
+<div class="gal" style="grid-template-columns:repeat(3,1fr);grid-auto-rows:100px" aria-hidden="true"><div class="ph p2" style="grid-column:auto;grid-row:auto"></div><div class="ph p3" style="grid-column:auto;grid-row:auto"></div><div class="ph p4" style="grid-column:auto;grid-row:auto"></div></div></div></div>
+</section>
+
+<section class="view" id="v-about"><div class="w sec">
+<p class="k">About us</p><h1 style="margin:1rem 0 2rem;font-size:clamp(2.3rem,7vw,5.5rem)">Rooted in culture. Connected by community.</h1>
+<p class="lead" style="max-width:38ch">We exist to celebrate Latino culture while creating friendship, belonging and cultural exchange.</p>
+<div class="cols" style="margin-top:3rem"><div class="pill"><h3>Culture</h3><p>Celebrating the diversity, creativity, traditions and contemporary influence of Latino communities.</p></div><div class="pill"><h3>Connection</h3><p>Bringing people together through events, networking, collaborations and shared experiences.</p></div><div class="pill"><h3>Belonging</h3><p>A welcoming space to express yourself, build friendships and feel part of something bigger.</p></div></div></div>
+<div class="sec tint"><div class="w cols"><div><p class="k">Our ambition</p><h2 style="margin:.8rem 0">Beyond one campus</h2></div><div><p>Greenwich is where we begin. We’re building bridges with other universities, cultural organisations and creative communities across London, so Latino culture has a connected, visible home in the city.</p><p>Expect inter-university collaborations, creative partnerships, networking and community initiatives, open to everyone who shares the spirit.</p></div></div></div>
+</section>
+
+<section class="view" id="v-events"><div class="w sec">
+<p class="k">Events</p><h1 style="margin:1rem 0;font-size:clamp(2.3rem,7vw,5.5rem)">Experiences</h1>
+<div class="chips" id="chips" role="group" aria-label="Filter events"></div>
+<div class="cards" id="evlist"></div>
+<h2 style="margin-top:4rem;font-size:2rem">Past events</h2><ul class="past" id="past"></ul>
+<p class="note" style="margin-top:2rem">Administrators: edit the EVENTS list at the top of the page script to add, change or remove events. Entries shown are sample placeholders.</p>
+</div></section>
+
+<section class="view" id="v-community"><div class="w sec">
+<p class="k">Community</p><h1 style="margin:1rem 0 1.5rem;font-size:clamp(2.3rem,7vw,5.5rem)">Built by its people</h1>
+<p class="lead" style="max-width:34ch">Not simply organised for members. Made by them.</p>
+<div class="cols" style="margin-top:3rem"><div class="pill"><h3>Ways to get involved</h3><p>Come to a social, host a night, share a skill, curate a playlist or bring an idea.</p></div><div class="pill"><h3>Volunteer & contribute</h3><p>Help with events, photography, design, social content and community initiatives.</p></div><div class="pill"><h3>Collaborations</h3><p>Working with other university societies and cultural organisations across London.</p></div></div></div>
+<div class="sec tint"><div class="w"><p class="k">Committee</p><h2 style="margin:.8rem 0 2rem">Meet the team</h2><div class="cols" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
+<div><div class="ph p1" data-l="Photo to come"></div><h3 style="margin-top:.8rem">Name Surname</h3><p class="note">President</p></div>
+<div><div class="ph p2" data-l="Photo to come"></div><h3 style="margin-top:.8rem">Name Surname</h3><p class="note">Events</p></div>
+<div><div class="ph p4" data-l="Photo to come"></div><h3 style="margin-top:.8rem">Name Surname</h3><p class="note">Creative & Social</p></div>
+<div><div class="ph p5" data-l="Photo to come"></div><h3 style="margin-top:.8rem">Name Surname</h3><p class="note">Partnerships</p></div></div></div></div>
+</section>
+
+<section class="view" id="v-get-involved"><div class="w sec">
+<p class="k">Get involved</p><h1 style="margin:1rem 0 2rem;font-size:clamp(2.3rem,7vw,5.5rem)">Your people. Your community. Your place.</h1>
+<div class="cols"><div><h3>Join us</h3><p>Membership is through the University of Greenwich Students’ Union. Search for Hispanic Society on the Students’ Union website, sign up, and you’re in. Everyone is welcome.</p>
+<div class="row"><a class="btn r" href="https://www.greenwichsu.co.uk/" rel="noopener" target="_blank">Join via Students’ Union</a></div>
+<p style="margin-top:2rem"><strong>Instagram:</strong> <a href="https://www.instagram.com/" rel="noopener" target="_blank">@hispanicsociety</a><br><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></p>
+<h3 style="margin-top:2rem">Collaborate</h3><p>Societies, organisations and brands: let’s make something together.</p></div>
+<form id="f"><label>Name<input name="n" required autocomplete="name"></label><label>Email<input type="email" name="e" required autocomplete="email"></label>
+<label>I’m getting in touch about<select name="t"><option>Joining</option><option>Collaboration</option><option>Partnership / sponsorship</option><option>Newsletter sign-up</option></select></label>
+<label>Message<textarea name="m" rows="4"></textarea></label><button class="btn r" type="submit">Send message</button><p class="note" id="ok" role="status"></p></form></div></div>
+</section>
+</main>
+<footer><div class="w"><div class="cols"><div><p class="big">Culture. Connection. Belonging.</p><p class="note">Hispanic Society · based at the University of Greenwich, London</p></div>
+<div><a href="#about">About</a><a href="#events">Events</a><a href="#community">Community</a></div><div><a href="#get-involved">Join</a><a href="https://www.instagram.com/" rel="noopener" target="_blank">Instagram</a><a href="mailto:hello@example.com">Email</a></div></div></div></footer>
+<script>
+// ADMIN: add, edit or remove events here. date = YYYY-MM-DD, cat = category name, link = booking URL.
+const EVENTS=[
+{t:"Welcome Social",d:"2026-11-20",time:"18:00",v:"Greenwich campus (venue TBC)",c:"Socials & community",x:"Meet the community over music, food and good company.",l:"#get-involved",a:"p1"},
+{t:"Noche de Música",d:"2026-12-04",time:"19:30",v:"London venue TBC",c:"Music & entertainment",x:"Live sounds from across Latin America and the diaspora.",l:"#get-involved",a:"p2"},
+{t:"Posadas Celebration",d:"2026-12-12",time:"17:00",v:"Greenwich campus (venue TBC)",c:"Cultural celebrations",x:"A festive evening of traditions, food and togetherness.",l:"#get-involved",a:"p4"},
+{t:"Creative Careers Mixer",d:"2027-01-22",time:"18:30",v:"TBC",c:"Networking & collaborations",x:"Meet creatives, founders and fellow societies.",l:"#get-involved",a:"p3"},
+{t:"Anniversary Party",d:"2027-02-27",time:"20:00",v:"TBC",c:"Special events",x:"A flagship night celebrating the community.",l:"#get-involved",a:"p5"},
+{t:"Sample past event",d:"2026-10-10",time:"18:00",v:"Greenwich",c:"Socials & community",x:"Replace with a real past event.",l:"",a:"p1"}
+];
+const CATS=["All","Socials & community","Cultural celebrations","Music & entertainment","Networking & collaborations","Special events"];
+const today=new Date().toISOString().slice(0,10),fmt=d=>new Date(d+"T12:00").toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"long",year:"numeric"});
+const up=EVENTS.filter(e=>e.d>=today).sort((a,b)=>a.d<b.d?-1:1),past=EVENTS.filter(e=>e.d<today).sort((a,b)=>a.d<b.d?1:-1);
+const card=e=>`<article class="ev"><div class="ph ${e.a}" data-l="Artwork placeholder" role="img" aria-label="Event artwork placeholder"></div><div class="b"><span class="k">${e.c}</span><h3>${e.t}</h3><span class="m">${fmt(e.d)} · ${e.time}<br>${e.v}</span><p>${e.x}</p><a class="btn r" href="${e.l}">Register</a></div></article>`;
+document.querySelectorAll("[data-feed]").forEach(el=>el.innerHTML=up.slice(0,+el.dataset.feed).map(card).join(""));
+let cat="All";const list=document.getElementById("evlist"),chips=document.getElementById("chips");
+function draw(){list.innerHTML=up.filter(e=>cat=="All"||e.c==cat).map(card).join("")||"<p>No events in this category yet. Check back soon.</p>";
+chips.innerHTML=CATS.map(c=>`<button aria-pressed="${c==cat}" data-c="${c}">${c}</button>`).join("")}
+chips.onclick=e=>{if(e.target.dataset.c){cat=e.target.dataset.c;draw()}};draw();
+document.getElementById("past").innerHTML=past.map(e=>`<li><span>${e.t}</span><span class="note">${fmt(e.d)}</span></li>`).join("")||"<li>Coming soon.</li>";
+function route(){const h=(location.hash||"#home").slice(1),id=document.getElementById("v-"+h)?h:"home";
+document.querySelectorAll(".view").forEach(v=>v.classList.toggle("on",v.id=="v-"+id));
+document.querySelectorAll(".links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+id));
+document.title=(id=="home"?"Hispanic Society":id.replace("-"," ").replace(/^\w/,c=>c.toUpperCase())+" · Hispanic Society");scrollTo(0,0)}
+addEventListener("hashchange",route);route();
+document.getElementById("f").onsubmit=e=>{e.preventDefault();const f=new FormData(e.target);
+location.href="mailto:hello@example.com?subject="+encodeURIComponent(f.get("t")+" – "+f.get("n"))+"&body="+encodeURIComponent(f.get("m")+"\n\n"+f.get("e"));
+document.getElementById("ok").textContent="Opening your email app…"};
+</script>
+</body>
+</html>
